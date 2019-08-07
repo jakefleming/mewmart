@@ -10,20 +10,29 @@ body {
     background-repeat: no-repeat;
     background-position: bottom right;
     @media (max-width: 1024px) {
-        background-size: 200%;
+        background-size: 150%;
+    }
+    @media (max-width: 768px) {
+        background-size: 300%;
+        background-position: left top;
     }
 }
 
 .bg-photo-01 {
     background-image: url(../images/photo-pin-cat-butt_01-scene-01.jpg);
-    background-position: bottom right;
 }
 
 .hero {
-    height: 56vh;
+    height: auto;
     padding: 6rem 0;
+    @media (max-width: 1440px) {
+        padding: 3rem 0 5rem 0;
+    }
     @media (max-width: 1024px) {
-        height: 60vh;
+        padding: 0rem 0 5rem 0;
+    }
+    @media (max-width: 768px) {
+        height: auto;
     }
     h1 {
         font-family: 'Bruphy Condensed'!important;
@@ -32,6 +41,10 @@ body {
         text-transform: uppercase;
         color: #34344b;
         margin: 0;
+        @media (max-width: 1440px) {
+            font-size: 5rem;
+            margin: 0;
+        }
     }
     h2 {
         font-family: 'Gooper'!important;
@@ -40,23 +53,39 @@ body {
         color: #ea6e46;
         font-style: italic;
         margin-bottom: 1rem;
+        @media (max-width: 1440px) {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
     }
     p {
         font-size: 1.5rem;
         line-height: 1.25;
         color: #f6a553;
+        @media (max-width: 1440px) {
+            font-size: 1rem;
+            font-weight: 500;
+        }
     }
 }
 
 .logo {
     height: 64px;
+    width: auto;
+    @media (max-width: 768px) {
+        height: 32px;
+    }
     svg {
         height: 64px;
+        width: auto;
         path {
             fill: #828eed;
             fill: #d3bb81;
             fill: #f6a553;
             fill: #ea6e46;
+        }
+        @media (max-width: 768px) {
+            height: 32px;
         }
     }
 }
@@ -66,21 +95,28 @@ body {
 }
 
 .navbar {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
+    @media (max-width: 1024px) {
+        position: static;
+        padding: 1rem;
+    }
 }
 
 .card {
     border: none;
     border-radius: 32px;
-    box-shadow: 0 32px 32px rgba(0,0,0,.1);
+    box-shadow: 0 32px 32px rgba(234, 109, 71, .1);
     padding: 2rem;
     .card-image:first-child img {
         border-top-left-radius: 32px;
         border-top-right-radius: 32px;
+    }
+    @media (max-width: 768px) {
+        padding: 0rem;
     }
 }
 
