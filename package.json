@@ -1,0 +1,11 @@
+{
+  "name": "mewmart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jakefleming/mewmart.git",
+  "author": "jake <jcbflmng@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.5.0"
+  }
+}
